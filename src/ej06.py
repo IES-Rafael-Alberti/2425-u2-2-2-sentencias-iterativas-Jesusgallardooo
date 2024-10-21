@@ -3,10 +3,10 @@
 
 '''
 *
-**
-***
-****
-*****
+* *
+* * *
+* * * *
+* * * * *
 '''
 
 def generar_triangulo(numero):
@@ -16,11 +16,14 @@ def generar_triangulo(numero):
     mensaje = ""
 
     while contador <= int(numero):
-        triangulo = triangulo + (" * ")
+        triangulo = triangulo + ("* ")
         mensaje = mensaje + triangulo + "\n"
         contador += 1
         
     return mensaje
+
+def salida(mensaje):
+    print(mensaje)
 
 def main():
 
@@ -28,16 +31,10 @@ def main():
     numero = input("Introduzca un numero entero positivo --> ")
 
     #Procesamiento
-    
-
     mensaje = generar_triangulo(numero)
-    
-    solucion = print(mensaje)
 
     #Salida 
-    return solucion
-
-
+    salida(mensaje)
 
 if __name__ == "__main__":
     main()
