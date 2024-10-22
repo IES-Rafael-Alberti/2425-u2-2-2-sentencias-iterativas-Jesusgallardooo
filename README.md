@@ -12,22 +12,22 @@ Apoyate en los siguientes recursos para realizar la práctica:
 
 ## Identificación de la Actividad
 - **ID de la Actividad:** [ID de la actividad]
-- **Módulo:** [Nombre del módulo] (`PROG`, `IS`, `EDES`, etc.)
-- **Unidad de Trabajo:** [Número y nombre de la unidad de trabajo]
-- **Fecha de Creación:** [Fecha de creación]
-- **Fecha de Entrega:** [Fecha de entrega]
+- **Módulo:** PROG
+- **Unidad de Trabajo:** UD2: Sentencias condicionales y repetitivas
+- **Fecha de Creación:** 18/10/2024
+- **Fecha de Entrega:** 24/10/2024
 - **Alumno(s):** 
-  - **Nombre y Apellidos:** [Nombre y Apellidos del alumno o integrantes del grupo]
-  - **Correo electrónico:** [Correo electrónico g.educaand.es]
-  - **Iniciales del Alumno/Grupo:** [Iniciales del alumno o del grupo]
+  - **Nombre y Apellidos:** Jesús Gallardo Domínguez 
+  - **Correo electrónico:** jgaldom0701@g.educaand.es
+  - **Iniciales del Alumno/Grupo:** JGD
 
 ## Descripción de la Actividad
 [Descripción detallada de la actividad, objetivos, y contexto necesario para comprenderla. Explicar en qué consiste la actividad y qué se espera que el alumno desarrolle o implemente.]
 
 ## Instrucciones de Compilación y Ejecución
 1. **Requisitos Previos:**
-   - [Lenguaje de programación y versión]
-   - [Entorno de desarrollo o dependencias necesarias]
+   - Python
+   - Visual Studio Code
 
 2. **Pasos para Compilar el Código:**
    ```bash
