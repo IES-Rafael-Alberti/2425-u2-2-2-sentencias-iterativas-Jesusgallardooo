@@ -6,38 +6,64 @@ def agrupar_impares(numero):
     mensaje = ""
 
     while contador <= int(numero):
-        if comprobar_impar(contador) and (contador != numero or contador != numero - 1):
-            mensaje = mensaje +  str(contador) + ", "
-        elif comprobar_impar(contador) and (contador == numero or contador == numero - 1):
-            mensaje = mensaje +  str(contador) + ""
-        else:
-            mensaje = mensaje
-
+        if comprobar_impar(contador):
+            mensaje += str(contador) + ", "
         contador += 1
+
+    mensaje = mensaje[:-2]  # Quitar la última coma y espacio
+    
     return mensaje
 
 def entrada():
-    numero = input("Introduzca un numero entero positivo --> ")
+    entrada = input("Introduzca un numero entero positivo --> ")
+    numero = validar_entrada(entrada)
+
+    # Verifica si la entrada es válida
+    while numero is None:
+        entrada = input("Introduzca un numero entero positivo --> ")
+        numero = validar_entrada(entrada)
+        
     return numero
+
+def validar_entrada(numero):
+    
+    '''
+    recibe:
+        un numero.
+        
+    devuelve:
+        - si es entero:
+            > numero
+        - si no es entero:
+            > None
+    '''
+    
+    try:
+        numero = int(numero)  
+        if numero > 0:
+            return numero  
+        else:
+            print("La entrada debe ser un número entero positivo.")
+            return None  
+    except ValueError:
+        print("Entrada no válida. Debe introducir un número entero positivo.")
+        return None  
 
 def salida(mensaje):
     print(mensaje)
 
 def comprobar_impar(contador):
-    return contador%2 != 0
-
-def comprobar_impar(contador):
-    return contador%2 != 0
+    return contador % 2 != 0
 
 def main():
-
-    #Entrada
+    
+    # Entrada
     numero = entrada()
 
-    #Procesamiento
+    # Procesamiento
     mensaje = agrupar_impares(numero)
 
-    #Salida
+    # Salida
     salida(mensaje)
 
 if __name__ == "__main__":

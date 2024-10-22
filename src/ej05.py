@@ -10,12 +10,15 @@ def generar_mensaje_por_anio(amount, interest, anios):
         mensaje = mensaje + "\n- Capital obtenido en el año " + str(contador) + " --> " + str(capital)
         amount = capital
         contador += 1
+        
     return mensaje
 
 def entrada():
+
     amount = float(input("Introduzca una cantidad a invertir --> "))
     interest = float(input("Introduzca el interes porcentual anual --> "))
     anios = int(input("Introduzca el numero de años que quieres invertirlo --> "))
+
     return amount,interest,anios
 
 def salida(mensaje):

@@ -9,6 +9,41 @@
 * * * * *
 '''
 
+def entrada():
+    entrada = input("Introduzca un numero entero positivo --> ")
+    numero = validar_entrada(entrada)
+
+    # Verifica si la entrada es válida
+    while numero is None:
+        entrada = input("Introduzca un numero entero positivo --> ")
+        numero = validar_entrada(entrada)
+        
+    return numero
+
+def validar_entrada(numero):
+    
+    '''
+    recibe:
+        un numero.
+        
+    devuelve:
+        - si es entero:
+            > numero
+        - si no es entero:
+            > None
+    '''
+    
+    try:
+        numero = int(numero)  
+        if numero > 0:
+            return numero  
+        else:
+            print("La entrada debe ser un número entero positivo.")
+            return None  
+    except ValueError:
+        print("Entrada no válida. Debe introducir un número entero positivo.")
+        return None  
+
 def generar_triangulo(numero):
 
     contador = 1
@@ -28,7 +63,7 @@ def salida(mensaje):
 def main():
 
     #Entrada
-    numero = input("Introduzca un numero entero positivo --> ")
+    numero = entrada()
 
     #Procesamiento
     mensaje = generar_triangulo(numero)
