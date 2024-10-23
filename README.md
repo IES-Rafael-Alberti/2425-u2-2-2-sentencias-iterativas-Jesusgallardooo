@@ -8,7 +8,7 @@ Apoyate en los siguientes recursos para realizar la práctica:
 
 ---
 
-# Título de la Actividad
+# Sentencias iterativas:
 
 ## Identificación de la Actividad
 - **ID de la Actividad:** P.2.2 sentencias iterativas
