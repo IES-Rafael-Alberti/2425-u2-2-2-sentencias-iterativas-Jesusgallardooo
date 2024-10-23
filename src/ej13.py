@@ -19,6 +19,7 @@ def main():
     while escuchar_usuario(vozUsuario):
         
         eco = "\t<<" + vozUsuario + ">>" + "\n\t\t<<" + vozUsuario + ">>"
+        
         # Salida
         sonar_eco(eco)
         

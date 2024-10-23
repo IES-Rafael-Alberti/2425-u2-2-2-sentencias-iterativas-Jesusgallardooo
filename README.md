@@ -50,4 +50,4 @@ En general, lo más tedioso ha sido el control de excepciones, ya que cuando la 
 He creado los tests y los he probado con el comando introducido arriba (pytest -v) para comprobar que eran correctos, y efectivamente todos ellos me pasan hasta el momento.
 
 ## Conclusiones
-[Resumen de las conclusiones alcanzadas al desarrollar la actividad, las lecciones aprendidas, y posibles mejoras que se puedan implementar en futuras entregas.]
+En general, me ha ido relativamente bien con la mayoría de actividades, solo he dejado 1 sin hacer, la 23, porque prefiero dedicarle ese tiempo a estudiar EDES. Me han llevado bastante tiempo en total por el tema excepciones y tests, pero lo que es la lógica de los ejercicios diría que comprendida con creces.
